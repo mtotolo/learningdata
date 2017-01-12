@@ -1,0 +1,5 @@
+require(dplyr)
+A<-data.frame(e1=rep(NA,100000),e2=rep(NA,100000))
+A$e1<-runif(100000)
+A$e2<-runif(100000)
+A<-A %>% rowwise() %>% mutate(e=min(e1,e2))

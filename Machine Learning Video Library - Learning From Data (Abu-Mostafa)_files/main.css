@@ -1,0 +1,110 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, h7, h8, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color:#DDD5D2;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: .9em;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: .75em;
+	margin-bottom: 12px;
+}
+
+/*Main Structure*/
+#w1 {margin: 0 auto; width: 910px;}
+#w2 {background-color:#FFFFFF; border: 7px solid #660033;}
+#w3 {background-color:#FFFFFF; background-image: url(../images/top-shadow.jpg); background-repeat: repeat-x; background-position: top; clear: both;padding: 20px 15px;}
+#cit {margin-bottom: 5px;}
+#header {border-bottom:7px solid #660033;position: relative;height: 156px;}
+#header #yaser-banner {position: absolute; top: -16px; left: 0;z-index:1;}
+#header #yaser-name {position: absolute; top: 47px; left: 220px;z-index:2;}
+#header #yaser-title {font-size: .8em;position: absolute; top: 95px; left: 230px;z-index:3;}
+#content {float:left; width: 660px;}
+#sidebar {float:right; width: 188px;}
+#footer {font-size: .75em;margin:10px 0;position:relative;}
+#footer .copyright {position:absolute;top: 50%; left: 110px;}
+
+/* Navigation */
+ul#nav {font-size: .8em;margin-bottom: 1em;}
+ul#nav li {line-height: 2em; border-bottom: 1px solid #F0E7E4;}
+ul#nav a {display:block; padding: 0 5px;font-weight:bold;}
+ul#nav a:link {color:#660033; text-decoration:none; }
+ul#nav a:visited {color:#660033; text-decoration:none; }
+ul#nav a:hover {color:#660033;background-color: #FDF9F6; text-decoration:none; }
+ul#nav a:active {color:#660033;background-color: #FDF9F6;text-decoration:none;}
+
+/* Type styles */
+a:link {color:#660033; text-decoration:underline;}
+a:visited {color:#660033;text-decoration:underline;}
+a:hover {color:#660033;text-decoration:none;}
+a:active {color:#660033;text-decoration:none;}
+h1 {color:#444444;font-family:Georgia, "Times New Roman", Times, serif;font-size: 1.3em;font-weight: normal;padding-bottom: 0.5em;}
+h2 {color:#7D2500;font-family:Georgia, "Times New Roman", Times, serif;font-size: .9em;font-weight: bold;padding-bottom: 0.5em;padding-top: .3em;}
+h3 {color:#333333;font-size: 0.85em;font-weight: bold;padding-bottom: .5em;}
+h5 {color:#666;font-size: 0.75em;font-weight: bold;padding-bottom: 0.3em;}
+h4 {color:#444444;font-size: 0.75em;font-weight: bold;padding-bottom: 0.3em; text-transform:uppercase;}
+h6 {color:#999;font-size: 0.7em;font-weight: normal;letter-spacing: 1px;padding-bottom: 0.3em;text-transform:uppercase;}
+h7 {color:#111111;font-family:Georgia, "Times New Roman", Times, serif;font-size: 1.8em;font-weight: normal;padding-bottom: 0.5em;}
+h8 {color:#111111;font-family:Georgia, "Times New Roman", Times, serif;font-size: 1.6em;font-weight: normal;padding-bottom: 0.5em;}
+p {font-size: .8em;line-height: 1.4em; padding-bottom: 1em;}
+#content li {font-size: .8em;line-height: 1.4em;list-style:disc;margin-left: 2em;}
+strong, b {font-weight: bold;}
+em, i {font-style:oblique;}
+ul {padding-bottom: 1em;}
+
+/* Table */
+th, td {padding: .3em; background:#FDF9F6;border: 1px solid #DDD5D2;}
+.section th, .section td {padding: .3em; background:#FFF;border: 1px solid #DDD5D2;}
+th p, td p {padding-bottom: 0;}
+th, th p {font-weight:bold;}
+
+/*Classes*/
+.section {background-color:#FDF9F6;border: 1px solid #DDD5D2;padding: 10px;margin-bottom: 10px;} /* Style for boxes - html div tag must have the class of "section" for the box style to appear */
+#sidebar .section {background-color: #F2EFEC; border: none;} /*alternate box style for sidebar aside box*/
+.clearfloat {clear:both; font-size:1px;height:0;line-height:0;}
+.fltrt {float: right;}
+.fltlt {float: left;}
+img.fltlt {margin-right: 10px;}
+img.fltrt {margin-left: 10px;}
